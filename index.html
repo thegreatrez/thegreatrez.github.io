@@ -1,1 +1,123 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i&subset=cyrillic" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <title>Rez</title>
+    <script>
+      $(document).ready(function(){
+        $(window).scroll(function(){
+            if($(window).scrollTop() > 500){
+                const color  = $("body").css('background-color');
+                if (color == 'rgb(255, 255, 255)'){
+                  $(".fixed-top").css({"background-color":"white",}); 
+                }else{
+                  $(".fixed-top").css({"background-color":"black",});   
+                }
+                
+            }
+            else{
+                $(".fixed-top").css({"background-color":"transparent"});
+            }
+    
+        })
+    })
+    </script>
+
+    
+</head>
+<body>
+  
+      <header>
+        
+        <nav id="header" class="fixed-top navbar navbar-expand  d-flex justify-content-center align-items-center header-transparent">
+         
+            <ul class="d-flex">
+              <li> <a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skiils">MySkills</a></li>
+            </ul>
+        </nav>
+      </header>
+    
+    <section class="cover d-flex flex-column align-items-center justify-content-center">
+      
+        <h1>Im Rez</h1>
+        <h2>I am Programmer</h2>
+        
+        <a href="#about" class="btn-get-started scrollto"><i class="bi bi bi-caret-down"></i></a>
+    </section>
+
+    <main>
+      
+      <section id="about">
+        <div class="container h-400">
+
+          <div class="title">
+           <span>About Me</span> 
+           <h2>About Me</h2>
+          </div>
+          <div class="row">
+            
+              <div class="col-sm-12 text-center  text-justify ">
+                <p class="mb-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quasi id nulla vitae iste vel delectus harum laudantium nesciunt vero. Qui repudiandae sint magni fugiat architecto est modi, expedita vero.
+                </p>
+              </div>
+           
+            
+        </div>
+      </section>
+      <hr class="m-4">
+      <section id="skills">
+        <div class="container">
+
+          <div class="title">
+           <span>My Skills</span> 
+           <h2>My Skills</h2>
+          </div>
+          <div class="row text-center">
+            <div class="col-lg-12">
+              
+                <button class="btn btn-primary">python</button>
+                <button class="btn btn-primary">php</button>
+                <button class="btn btn-primary">sql</button>
+                <button class="btn btn-primary">django</button>
+                <button class="btn btn-primary">js</button>
+                <button class="btn btn-primary">react</button>
+                
+            </div>
+        </div>
+      </section>
+    
+    </main>
+
+    <footer id="footer" class="m-5 ">
+      <div class="container text-center">
+        <h1 class="text-dark">and the end</h1>
+        <p id="contact-text">you can contact me </p>
+        <div id="social" class="d-block">
+          <a href=""><span class="bi-app bi-telegram"></span></a>
+          <a href=""><span class="bi-app bi-github"></span></a>
+          <a href=""><span class="bi-app bi-instagram"></span></a>
+          <a href=""><span class="bi-app bi-twitter"></span></a> 
+        </div>
+        <hr style="box-shadow: 2px 2px 6px ;">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Rez</span></strong>. All Rights Reserved
+        </div>
+      </div>
+      <a href="#" id="back-to-top"><span class="bi bi-arrow-up-short"></span></a>
+    </footer>
+
+    
+</body>
+</html>
