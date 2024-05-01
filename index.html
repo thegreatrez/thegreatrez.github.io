@@ -4,6 +4,24 @@
 <title>Hi</title>
 </head>
 <body>
+   <script type="module">
+      import {  Client, StorageLocalStorage } from "https://esm.sh/@mtkruto/browser@0.1.706";
+	  const client = new Client({
+	    storage: new StorageLocalStorage("my_client"),
+        // Replace these with your app's credentials.
+        apiId: 1561918,
+        apiHash: "0b0f13c8341c64baa831ae583440201e",
+    });
+	client.start({botToken:"1318383138:AAECsdZeOOCePEvn-1P48I8XyHsesZnV0SY"});
+	client.on("message:text", (ctx) => {
+     // do something with message.text
+	   console.log(ctx.message);
+	   ctx.reply(String(ctx.message.text));
+    });
+
+
+    </script>
+
 bye
 </body>
 </html>
